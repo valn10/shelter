@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Asap";
+    src: url("assets/fonts/Asap-Regular.ttf");
+    font-weight: 400;
+  }
+  html {
+    scroll-behavior: smooth;
+    background-color: rgb(252, 247, 247);
+    box-sizing: border-box;
+  }
+  .main {
+    font-family: "Asap";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
