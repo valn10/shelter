@@ -1,0 +1,499 @@
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/arial/arial-regular.ttf);
+    font-style: regular;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url(../assets/fonts/georgia/georgia-regular.ttf);
+    font-style: regular;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+html {
+    scroll-behavior: smooth;
+    /* background-color: black; */
+}
+body {
+    width: 1280px;
+    height: 3796px;
+    display: flex;
+    flex-direction: column;
+}
+/* ----------------header----------------- */
+.header {
+    position: absolute;
+    width: 1200px;
+    top: 60px;
+    left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.header_logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logo_title {
+    width: 186px;
+    height: 35px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    /* для хувера */
+    transition: 1s;
+    text-align: center;
+}
+.logo_title:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.logo_text {
+    width: 180px;
+    height: 15px;
+    left: 4px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    
+}
+.header_menu {
+    justify-content: center;
+    height: 30px; 
+
+}
+.header_list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    list-style: none;
+}
+.menu_link {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    margin-left: 2em;
+    text-decoration: none;
+    color: #FFFFFF;
+    /* для хувера */
+    transition: 0.5s;
+    text-align: center;
+}
+.menu_link.about{
+    text-decoration: underline;
+    color: #F1CDB3;
+    /* эффект свечения кнопки меню */
+    text-shadow: #F1CDB3  0 0 10px;
+}
+.menu_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #F1CDB3;
+    font-size: larger;
+}
+
+.header_burger {
+    display: none;
+}
+/* ----------------main----------------- */
+.start {
+    padding: 180px 40px 0 40px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 728px;
+    background-image: url(..//assets/main_layout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.start_info {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding-top: 163px;
+    width: 460px;
+    height: 322px;
+}
+.start_title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.start_text {
+    font-style: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    height: 72px;
+    color: #CDCDCD;
+}
+.start_button {
+    padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-style: 'Georgia';
+    font-size: 18px;
+}
+/* ----------------about----------------- */
+.about {
+    height: 588px;
+    display: flex;
+    justify-content: center;
+}
+.about_content {
+    padding: 80px 40px 100px 40px;
+    display: flex;
+    flex-direction: row;
+
+}
+.about_image {
+    height: 408px;
+    width: 300px;
+    padding-left: 175px;
+}
+.about_info {
+    height: 380px;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    justify-content: space-between;
+
+}
+.about_title {
+    width: 370px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #4C4C4C;
+}
+.about_text_1 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+}
+.about_text_2 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #4C4C4C;
+}
+/* ----------------pets----------------- */
+.pets {
+    width: 1280px;
+    height: 877px;
+    background: #F6F6F6;
+}
+.pets_content {
+    padding: 80px 40px 100px 40px;
+    height: 737px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pets_title {
+    width: 400px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.pets_btn {
+    width: 261px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    align-self: center;
+}
+.pet_scroll {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card {
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1s;
+
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.pet_name {
+    width: 83px;
+    height: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.pt_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    /* шрифт текста */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    transition: 1s;
+}
+.pt_btn:hover {
+    cursor: pointer;
+    background:#F1CDB3;
+}
+.scroll {
+    width: 52px;
+    height: 52px;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    font-size:large;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    /* для хувера */
+    transition: 0.5s;
+}
+/* .scroll:active, */
+.scroll:hover{
+    cursor:grab;
+    color:#F1CDB3;
+    transform: scale(1.1);
+
+}
+/* ----------------help----------------- */
+.help {
+    height: 611px;
+    background: #FFFFFF;
+}
+.help_content {
+    padding: 80px 40px 100px 40px;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.help_title {
+    width: 310px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.help_list {
+    width: 1026px;
+    height: 281px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.help_icon {
+    width: 180px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    transition: 1s;
+}
+.help_icon:hover,
+.help_icon:active,
+.help_icon:focus{
+    cursor:grabbing;
+    transform: scale(1.2);
+}
+
+.help_name {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+/* ----------------donation----------------- */
+.donation {
+    height: 462px;
+    background: #F6F6F6;
+}
+.donat_content {
+    padding: 80px 182px 100px 183px;
+    height: 282px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.donat_check {
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.donat_title {
+    width: 300px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.donat_text {
+    width: 309px;
+    height: 17px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.donat_card {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    width: 349px;
+    height: 43px;
+    background: url(../assets/icons/Credit_card.png);
+    background-position: center;
+    border-radius: 9px;
+}
+.donat_info {
+    width: 380px;
+    height: 72px;
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+}
+/* ----------------footer----------------- */
+.footer {
+    height: 350px;
+    background-image: url(..//assets/footer_layout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_content {
+    padding: 40px 40px 0 40px;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_title {
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.footer_info {
+    width: 280px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

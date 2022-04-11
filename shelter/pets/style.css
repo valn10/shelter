@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/arial/arial-regular.ttf);
+    font-style: regular;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url(../assets/fonts/georgia/georgia-regular.ttf);
+    font-style: regular;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+html {
+    scroll-behavior: smooth;
+    /* background-color: black; */
+}
+body {
+    width: 1280px;
+    height: 1812px;
+    display: flex;
+    flex-direction: column;
+}
+/* ----------------header----------------- */
+.header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+}
+.header_content {
+    padding: 30px 40px;
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header_logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logo_title {
+    width: 186px;
+    height: 35px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    /* для хувера */
+    transition: 1s;
+    text-align: center;
+}
+.logo_title:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.logo_text {
+    width: 180px;
+    height: 15px;
+    left: 4px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #292929;
+    
+}
+.header_menu {
+    justify-content: space-between;
+    align-items: center;
+    height: 30px; 
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    list-style: none;
+
+}
+.header_list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    list-style: none;
+}
+.menu_link {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+    margin-left: 2em;
+    text-decoration: none;
+    /* для хувера */
+    transition: 0.5s;
+    text-align: center;
+}
+.menu_link.about{
+    text-decoration: underline;
+    color: #545454;
+    /* эффект свечения кнопки меню */
+    text-shadow: #545454  0 0 5px;
+}
+.menu_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #545454;
+    font-size: larger;
+}
+
+.header_burger {
+    display: none;
+}
+/* ----------------main----------------- */
+.main {
+    height: 1324px;
+}
+.main_content {
+    height: 1162px;
+    padding: 80px 40px 100px 40px;
+    display: grid;
+    grid-template-columns: 1200px;
+    grid-template-rows: 135px 930px 97px;
+    align-content: center;
+}
+.main_title {
+    width: 400px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    color: #545454;;
+}
+.card {
+    width: 270px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1s;
+
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.pet_name {
+    width: 83px;
+    height: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.pt_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 45px;
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 100px;
+    /* шрифт текста */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    transition: 1s;
+}
+.pt_btn:hover {
+    cursor: pointer;
+    background:#F1CDB3;
+}
+.gallery {
+    display:grid;
+    grid-template-rows: repeat(2, 435px);
+    grid-template-columns: repeat(4, 270px);
+    grid-column-gap: 40px;
+}
+.nav_btn {
+    width: 340px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+.btn{
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    background: #ffffff;
+    font-size: larger;
+    box-sizing: border-box;
+    border-radius: 100px;
+     /* для хувера */
+     transition: 0.5s;
+}
+.btn:hover{
+    cursor: pointer;
+    background:#F1CDB3;
+    transform: scale(1.1);
+}
+.page {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    background: #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15px;
+    
+
+}
+/* ----------------footer----------------- */
+.footer {
+    height: 350px;
+    background-image: url(..//assets/footer_layout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_content {
+    padding: 40px 40px 0 40px;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_title {
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.footer_info {
+    width: 280px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
