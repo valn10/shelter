@@ -1,1 +1,1 @@
-https://valn10.github.io/rsschool-cv/
+https://valn10.github.io/shelter/
