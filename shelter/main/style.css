@@ -19,10 +19,12 @@ html {
     /* background-color: black; */
 }
 body {
+    position: relative;
     width: 1280px;
     height: 3796px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 /* ----------------header----------------- */
 .header {
@@ -82,6 +84,7 @@ body {
     flex-direction: row;
     justify-content: space-around; 
     list-style: none;
+    height: 30px;
 }
 .menu_link {
     font-family: 'Arial';
@@ -278,6 +281,7 @@ body {
 .card:hover{
     cursor: pointer;
     transform: scale(1.1);
+    box-shadow: #F1CDB3  0 0 10px;
 }
 .pet_name {
     width: 83px;

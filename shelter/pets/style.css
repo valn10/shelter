@@ -23,6 +23,7 @@ body {
     height: 1812px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 /* ----------------header----------------- */
 .header {
@@ -168,6 +169,7 @@ body {
 .card:hover{
     cursor: pointer;
     transform: scale(1.1);
+    box-shadow: #F1CDB3  0 0 10px;
 }
 .pet_name {
     width: 83px;
