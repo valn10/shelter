@@ -1,1 +1,1 @@
-https://valn10.github.io/shelter/
+https://valn10.github.io/shelter/shelter
