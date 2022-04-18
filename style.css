@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Asap";
+    src: url("assets/fonts/Asap-Regular.ttf");
+    font-weight: 400;
+  }
+  html {
+    scroll-behavior: smooth;
+    background-color: rgb(252, 247, 247);
+    box-sizing: border-box;
+  }
+  .main {
+    font-family: "Asap";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-footer {
+    padding: 20px;
+    background-color: rgb(7, 170, 118);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+  }
+  .container-header {
+    padding: 30px;
+    background-color: rgb(7, 170, 118);
+    display: flexbox;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 10px;
+  }
+  .list {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #ava {
+    border: 3px solid rgb(7, 170, 118);
+    border-radius: 8px;
+  }
+  .line {
+    font-size: 22px;
+  }  
